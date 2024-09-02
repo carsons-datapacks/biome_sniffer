@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:red_sand"
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"biome_sniffer.sniffer_interaction\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [["interact"]],
+  "rewards": {
+    "function": "biome_sniffer:sniff_badlands"
+  }
+}

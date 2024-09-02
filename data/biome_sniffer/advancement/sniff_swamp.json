@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "interact": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "item": {
+            "items": "minecraft:lily_pad"
+          },
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"biome_sniffer.sniffer_interaction\"]}"
+          }
+        }
+      }
+    },
+    "requirements": [["interact"]],
+    "rewards": {
+      "function": "biome_sniffer:sniff_swamp"
+    }
+  }
+  
